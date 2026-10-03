@@ -34,11 +34,6 @@ Thumbs.db
 data/raw/*.csv
 data/processed/*.csv
 
-# Generated ML artifacts
-models/model/*.joblib
-models/preprocessor/*.joblib
-models/calibration/*.joblib
-
 # Temporary files
 *.tmp
 *.temp
