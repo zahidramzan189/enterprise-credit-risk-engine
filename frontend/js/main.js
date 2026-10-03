@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",async()=>{const e=document.getElementById("health");if(!e)return;try{await API.checkHealth();e.textContent="API online";e.className="status-pill status-low"}catch(x){e.textContent=x.message;e.className="status-pill status-high"}});

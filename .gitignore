@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Data
+data/raw/*.csv
+data/processed/*.csv
+
+# Generated ML artifacts
+models/model/*.joblib
+models/preprocessor/*.joblib
+models/calibration/*.joblib
+
+# Temporary files
+*.tmp
+*.temp

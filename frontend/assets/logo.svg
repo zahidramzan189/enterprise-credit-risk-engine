@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50">
+<rect width="220" height="50" rx="12" fill="#0b1220"/>
+<path d="M18 34V16h7l8 10 8-10h7v18h-7V26l-8 9-8-9v8z" fill="#4da3ff"/>
+<text x="62" y="31" font-family="Arial" font-size="16" fill="#f5f7fb">CREDIT RISK ENGINE</text>
+</svg>

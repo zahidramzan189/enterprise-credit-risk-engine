@@ -1,0 +1,6 @@
+Place the real `credit_risk_dataset.csv` here. Expected 12-column schema:
+person_age, person_income, person_home_ownership, person_emp_length, loan_intent,
+loan_grade, loan_amnt, loan_int_rate, loan_status, loan_percent_income,
+cb_person_default_on_file, cb_person_cred_hist_length.
+
+The repository intentionally does not fabricate the dataset or training metrics.

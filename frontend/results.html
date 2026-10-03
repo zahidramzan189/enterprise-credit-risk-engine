@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Results | Credit Risk Engine</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/results.css">
+</head><body>
+<div class="app-shell"><aside class="sidebar"><div class="brand"><img src="/assets/logo.svg" alt="Credit Risk Engine"></div>
+<nav>
+<a href="/dashboard.html" class="">Dashboard</a>
+<a href="/risk-analysis.html" class="">Risk Analysis</a>
+<a href="/results.html" class="active">Results</a>
+<a href="/history.html" class="">History</a>
+<a href="/dashboard.html#model">Model Info</a>
+</nav><div class="sidebar-bottom"><span>Settings</span><span>Secure workspace</span></div></aside>
+<main class="content"><header class="topbar"><div>Enterprise Credit Risk Engine</div><div>● API workspace</div></header>
+<section class="page-head"><div><p class="eyebrow">RISK ASSESSMENT</p><h1>Prediction result</h1></div><a class="btn" href="/risk-analysis.html">New Analysis</a></section>
+<div id="empty" class="panel"><h2>No prediction loaded</h2><p class="muted">Run a risk analysis first.</p></div>
+<div id="result" class="hidden"><section class="result-hero panel"><div><span class="eyebrow">RISK LEVEL</span><div id="riskLevel" class="risk-level">—</div></div>
+<div><span>Risk Score</span><strong id="riskScore">—</strong></div><div><span>Default Probability</span><strong id="probability">—</strong></div></section>
+<section class="grid-two"><div class="panel"><h2>Decision</h2><div id="decision"></div><p class="muted">Model artifact</p><div id="modelUsed"></div></div>
+<div class="panel"><h2>Key Factors</h2><div id="factors"></div></div></section>
+<section class="panel"><h2>Explainable AI</h2><p id="explanationText" class="muted"></p>
+<div class="factor-columns"><div><h3>Positive risk contributors</h3><div id="positiveFactors"></div></div>
+<div><h3>Negative risk contributors</h3><div id="negativeFactors"></div></div></div></section></div>
+</main></div>
+<script src="/js/utils.js"></script><script src="/js/results.js"></script></body></html>

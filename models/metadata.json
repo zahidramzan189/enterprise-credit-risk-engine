@@ -1,0 +1,84 @@
+{
+  "project": "Enterprise Credit Risk Engine",
+  "target": "loan_status",
+  "best_model": "xgboost",
+  "best_roc_auc": 0.9495360306083154,
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.8207764308731011,
+      "precision": 0.5638832997987927,
+      "recall": 0.7883263009845288,
+      "f1": 0.6574780058651026,
+      "roc_auc": 0.8791127508422947,
+      "pr_auc": 0.7362813340574555,
+      "confusion_matrix": [
+        [
+          4228,
+          867
+        ],
+        [
+          301,
+          1121
+        ]
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.9320239373945067,
+      "precision": 0.953660797034291,
+      "recall": 0.7236286919831224,
+      "f1": 0.8228708516593363,
+      "roc_auc": 0.9333054523822342,
+      "pr_auc": 0.8867727008526135,
+      "confusion_matrix": [
+        [
+          5045,
+          50
+        ],
+        [
+          393,
+          1029
+        ]
+      ]
+    },
+    "xgboost": {
+      "accuracy": 0.9340187202700629,
+      "precision": 0.9688090737240076,
+      "recall": 0.7208157524613221,
+      "f1": 0.8266129032258065,
+      "roc_auc": 0.9495360306083154,
+      "pr_auc": 0.9060801333320128,
+      "confusion_matrix": [
+        [
+          5062,
+          33
+        ],
+        [
+          397,
+          1025
+        ]
+      ]
+    }
+  },
+  "random_state": 42,
+  "training_samples": 26064,
+  "testing_samples": 6517,
+  "dataset_rows": 32581,
+  "dataset_columns": 12,
+  "input_features": [
+    "person_age",
+    "person_income",
+    "person_home_ownership",
+    "person_emp_length",
+    "loan_intent",
+    "loan_grade",
+    "loan_amnt",
+    "loan_int_rate",
+    "loan_percent_income",
+    "cb_person_default_on_file",
+    "cb_person_cred_hist_length"
+  ],
+  "calibration": {
+    "method": "sigmoid",
+    "cv": 5
+  }
+}

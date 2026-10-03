@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Risk Analysis | Credit Risk Engine</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/risk-analysis.css">
+</head><body>
+<div class="app-shell"><aside class="sidebar"><div class="brand"><img src="/assets/logo.svg" alt="Credit Risk Engine"></div>
+<nav>
+<a href="/dashboard.html" class="">Dashboard</a>
+<a href="/risk-analysis.html" class="active">Risk Analysis</a>
+<a href="/results.html" class="">Results</a>
+<a href="/history.html" class="">History</a>
+<a href="/dashboard.html#model">Model Info</a>
+</nav><div class="sidebar-bottom"><span>Settings</span><span>Secure workspace</span></div></aside>
+<main class="content"><header class="topbar"><div>Enterprise Credit Risk Engine</div><div>● API workspace</div></header>
+<section class="page-head"><div><p class="eyebrow">UNDERWRITING WORKSPACE</p><h1>Analyze credit risk</h1>
+<p class="muted">Submit exactly the model's inference features. The target is never accepted from the client.</p></div></section>
+<form id="riskForm" class="form-panel"><div class="form-grid">
+<label>Person Age<input name="person_age" type="number" min="18" max="100" required value="30"></label>
+<label>Person Income<input name="person_income" type="number" min="0" required value="60000"></label>
+<label>Home Ownership<select name="person_home_ownership"><option>RENT</option><option>MORTGAGE</option><option>OWN</option><option>OTHER</option></select></label>
+<label>Employment Length<input name="person_emp_length" type="number" min="0" max="100" step=".1" required value="5"></label>
+<label>Loan Intent<select name="loan_intent"><option>PERSONAL</option><option>EDUCATION</option><option>MEDICAL</option><option>VENTURE</option><option>HOMEIMPROVEMENT</option><option>DEBTCONSOLIDATION</option></select></label>
+<label>Loan Grade<select name="loan_grade"><option>A</option><option selected>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option></select></label>
+<label>Loan Amount<input name="loan_amnt" type="number" min="0" required value="10000"></label>
+<label>Loan Interest Rate<input name="loan_int_rate" type="number" min="0" max="100" step=".01" required value="11.5"></label>
+<label>Loan Percent Income<input name="loan_percent_income" type="number" min="0" max="10" step=".01" required value=".17"></label>
+<label>Previous Default<select name="cb_person_default_on_file"><option>N</option><option>Y</option></select></label>
+<label>Credit History Length<input name="cb_person_cred_hist_length" type="number" min="0" max="100" step=".1" required value="8"></label>
+</div><div class="form-actions"><span id="formError" class="error"></span><button class="btn primary" type="submit">Analyze Credit Risk</button></div></form>
+</main></div>
+<script src="/js/api.js"></script><script src="/js/utils.js"></script><script src="/js/risk-analysis.js"></script></body></html>
